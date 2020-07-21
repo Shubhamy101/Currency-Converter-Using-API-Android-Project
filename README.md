@@ -47,7 +47,7 @@ API Used For Querying Currency Exchange Rates
 
 ** The Paid Version can support upto 500,000 Requests / mo, 60-second Updates, HTTPS Encryption, Source Currency Switching. **
 
-Usage of API : (I am Using Free Version of for this App)
+Usage of API : (I am Using Free Version of API for this App)
 
 http://apilayer.net/api/live
 
