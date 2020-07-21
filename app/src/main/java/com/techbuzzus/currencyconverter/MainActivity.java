@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -50,6 +51,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Will Disable Screen Rotation
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         StringRequest stringRequest = new StringRequest(Json_URL_USD, new Response.Listener<String>() {
             @Override
@@ -450,7 +454,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                         break;
                 }
 
-                if (e1.getText().length() == 0) {
+                if (e1.getText().length() <= 0) {
                     Toast.makeText(MainActivity.this, warning + "  Amount Field is Empty", Toast.LENGTH_SHORT).show();
                 }else {
 
