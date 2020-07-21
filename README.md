@@ -13,7 +13,7 @@ Concepts Used in Project -
   * Toasts
   * Alert Dialog Box
   * Custom Adapter (Adapter Used with Spinner)
-  * JSON Parsing With API's (About API in other File)
+  * JSON Parsing With API's (About API in detail below)
   * Intents
   * OOP's
 
