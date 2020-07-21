@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/currency_converter"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textSize="34sp"
+        android:padding="10dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/heading"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:inputType="numberDecimal"
+        android:id="@id/e1"
+        android:textColorHint="@color/colorAccent"
+        android:hint="@string/enter_amount"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/e1"
+        android:text="@string/from"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:padding="8dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:id="@+id/t1"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t1"
+        android:textStyle="bold"
+        android:dropDownSelector="@color/black"
+        android:padding="8dp"
+        android:id="@+id/s1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/s1"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/exchange"
+        android:id="@+id/i1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/i1"
+        android:text="@string/to"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:padding="8dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:id="@+id/t2"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t2"
+        android:textStyle="bold"
+        android:dropDownSelector="@color/black"
+        android:padding="8dp"
+        android:id="@+id/s2" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:id="@+id/b1"
+        android:layout_below="@id/s2"
+        android:layout_marginTop="50dp"
+        android:text="@string/convert"
+        android:textAllCaps="true"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:padding="12dp"
+        android:textColor="@color/green"
+        android:background="@color/black"/>
+
+</RelativeLayout>
